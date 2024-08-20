@@ -55,6 +55,7 @@ public class Reloj {
     }
     
     public void incrementarDia(){
-        
+        LocalDate diaIncrementado = dia.plusDays(1);
+        System.out.println(diaIncrementado);
     }
 }
