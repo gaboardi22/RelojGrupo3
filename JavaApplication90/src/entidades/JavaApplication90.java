@@ -1,5 +1,5 @@
 
-package main;
+package entidades;
 
 import entidades.Reloj;
 
@@ -9,8 +9,9 @@ public class JavaApplication90 {
 
  
     public static void main(String[] args) {
-      Reloj reloj1  = new Reloj(  "dsds", 1);
-      reloj1.incrementarDia();
+     Reloj reloj = new Reloj("modelo1", 23132133);
+     reloj.toString();
+     reloj.incrementarDia();
     }
     
 }
