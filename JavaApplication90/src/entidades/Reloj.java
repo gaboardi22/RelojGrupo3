@@ -2,18 +2,20 @@
 package entidades;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
 
 
 public class Reloj {
     private LocalDate dia;
-    private LocalDateTime hora;
+    private LocalTime hora;
     private String modelo;
     private long nroSerie;
 
     public Reloj( String modelo, long nroSerie) {
         this.dia = LocalDate.now();
-        this.hora = LocalDateTime.now();
+        this.hora = LocalTime.now();
         this.modelo = modelo;
         this.nroSerie = nroSerie;
     }
@@ -26,11 +28,11 @@ public class Reloj {
         this.dia = dia;
     }
 
-    public LocalDateTime getHora() {
+    public LocalTime getHora() {
         return hora;
     }
 
-    public void setHora(LocalDateTime hora) {
+    public void setHora(LocalTime hora) {
         this.hora = hora;
     }
 
@@ -58,5 +60,10 @@ public class Reloj {
     public void incrementarDia(){
         LocalDate diaIncrementado = dia.plusDays(1);
         System.out.println(diaIncrementado);
+    }
+    public void IncrementarHora(){
+        LocalTime horaIncrementada = hora.plusHours(1);
+         DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm");
+        System.out.println(horaIncrementada.format(formatoHora));
     }
 }
