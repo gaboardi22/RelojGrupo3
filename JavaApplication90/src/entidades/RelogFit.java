@@ -9,12 +9,14 @@ public class RelogFit extends Reloj {
     private int y;
     private int frecuencia;
 
-    public RelogFit(int x, int y, int frecuencia, LocalDate dia, LocalDate hora, String modelo, long nroSerie) {
-        super(dia, hora, modelo, nroSerie);
+    public RelogFit(int x, int y, int frecuencia, String modelo, long nroSerie) {
+        super(modelo, nroSerie);
         this.x = x;
         this.y = y;
         this.frecuencia = frecuencia;
     }
+
+  
 
     public int getFrecuencia() {
         return frecuencia;
