@@ -1,6 +1,8 @@
 
 package entidades;
 
+import java.time.format.DateTimeFormatter;
+
 
 public class Persona {
     private String nombre;
@@ -53,6 +55,6 @@ public class Persona {
     }
     
     public void decirHora(Reloj reloj){
-        System.out.println(reloj.getHora());
+       System.out.println("LA HORA ES: " + reloj.getHora().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
     }
 }
