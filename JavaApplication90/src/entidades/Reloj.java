@@ -58,15 +58,17 @@ public class Reloj {
     }
     
     public void incrementarDia(){
+        System.out.println("INCREMENTO EN UNA UNIDAD DEL DIA");
         LocalDate diaIncrementado = dia.plusDays(1);
         System.out.println(diaIncrementado);
     }
     public void incrementarHora(){
+        System.out.println(" INCREMENTO EN UNA UNIDAD DE LA  HORA");
         LocalTime horaIncrementada = hora.plusHours(1);
          DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm");
         System.out.println(horaIncrementada.format(formatoHora));
     }
     public void limpiarPantalla(){
-        System.out.println("la pantalla esta limpia");
+        System.out.println("PANTALLA LIMPIA");
     }
 }

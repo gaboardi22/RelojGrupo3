@@ -63,6 +63,6 @@ public class Persona {
     }
 
     public void decirHora(){
-       System.out.println("LA HORA ES: " + reloj.getHora().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
+       System.out.println("HORA ACTUAL: " + reloj.getHora().format(DateTimeFormatter.ofPattern("HH:mm")));
     }
 }

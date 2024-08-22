@@ -8,7 +8,6 @@ public class JavaApplication90 {
      Reloj reloj = new Reloj("modelo1", 23132133);
      Persona persona1 = new Persona("sdds", "scs", 0, 0, reloj);
      persona1.decirHora();
-     System.out.println(reloj.getHora());
      persona1.getReloj().incrementarHora();
      persona1.getReloj().incrementarDia();
      RelojFit reloj2 = new RelojFit(0, 0, 434, "sdsd", 232323); 

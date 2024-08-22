@@ -47,6 +47,7 @@ public class RelojFit extends Reloj {
         return Hz = (int)(Math.random() * 5);  
     }
    public int distanciaRecorrida(int a, int b){
+       System.out.println("DISTANCIA RECORRIDA POR LA PERSONA");
        int pasos =(int) Math.sqrt(Math.pow(a - x, 2 )+Math.pow(b - y, 2 ));
        return pasos;
    }
