@@ -1,22 +1,17 @@
 
 package entidades;
 
-import java.time.LocalDate;
-
-
-public class RelogFit extends Reloj {
+public class RelojFit extends Reloj {
     private int x;
     private int y;
     private int frecuencia;
 
-    public RelogFit(int x, int y, int frecuencia, String modelo, long nroSerie) {
+    public RelojFit(int x, int y, int frecuencia, String modelo, long nroSerie) {
         super(modelo, nroSerie);
         this.x = x;
         this.y = y;
         this.frecuencia = frecuencia;
     }
-
-  
 
     public int getFrecuencia() {
         return frecuencia;
@@ -51,6 +46,10 @@ public class RelogFit extends Reloj {
         int Hz;
         return Hz = (int)(Math.random() * 5);  
     }
+   public int distanciaRecorrida(int a, int b){
+       int pasos =(int) Math.sqrt(Math.pow(a - x, 2 )+Math.pow(b - y, 2 ));
+       return pasos;
+   }
     }
  
     

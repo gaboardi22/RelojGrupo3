@@ -61,9 +61,12 @@ public class Reloj {
         LocalDate diaIncrementado = dia.plusDays(1);
         System.out.println(diaIncrementado);
     }
-    public void IncrementarHora(){
+    public void incrementarHora(){
         LocalTime horaIncrementada = hora.plusHours(1);
          DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm");
         System.out.println(horaIncrementada.format(formatoHora));
+    }
+    public void limpiarPantalla(){
+        System.out.println("la pantalla esta limpia");
     }
 }

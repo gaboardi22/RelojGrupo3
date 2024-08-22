@@ -9,14 +9,22 @@ public class Persona {
     private String apellido;
     private int edad;
     private double altura;
+    private  Reloj reloj;
 
-    public Persona(String nombre, String apellido, int edad, double altura) {
+    public Persona(String nombre, String apellido, int edad, double altura, Reloj reloj) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.altura = altura;
+        this.reloj = reloj;
     }
 
+    public Reloj getReloj() {
+        return reloj;
+    }
+    public void setReloj(Reloj reloj) {
+        this.reloj = reloj;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -51,10 +59,10 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", altura=" + altura + '}';
+        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", altura=" + altura + ", reloj=" + reloj + '}';
     }
-    
-    public void decirHora(Reloj reloj){
+
+    public void decirHora(){
        System.out.println("LA HORA ES: " + reloj.getHora().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
     }
 }
