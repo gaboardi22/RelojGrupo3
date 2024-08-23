@@ -12,5 +12,6 @@ public class JavaApplication90 {
      persona1.getReloj().incrementarDia();
      RelojFit reloj2 = new RelojFit(0, 0, 434, "sdsd", 232323); 
      System.out.println( reloj2.distanciaRecorrida(3, 3));
+     System.out.println("FRECUANCIA : " + reloj2.frecuenciaAleatoria()); 
     }
 }

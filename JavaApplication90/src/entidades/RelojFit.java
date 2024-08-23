@@ -44,7 +44,7 @@ public class RelojFit extends Reloj {
 
    public int frecuenciaAleatoria(){
         int Hz;
-        return Hz = (int)(Math.random() * 5);  
+        return Hz = (int)(Math.random() *60 + 60);  
     }
    public int distanciaRecorrida(int a, int b){
        System.out.println("DISTANCIA RECORRIDA POR LA PERSONA");
